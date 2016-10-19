@@ -7,8 +7,8 @@
 	for ($i=1; $i <=1000000; $i++)
 	{
 		$string = $i . "_address@sink.sendgrid.com\n"; //the address is built by concatenating the value of the variable
-														// "i" to the rest of the email address. At the end we add \n to jump on a 
-														//new line so that the next address will be added on a new line.
+							// "i" to the rest of the email address. At the end we add \n to jump on a 
+							//new line so that the next address will be added on a new line.
 		echo $string;  //this simply displays the email addresses when you run the code.
 		file_put_contents('filename.csv', $string, FILE_APPEND); 
 	}
